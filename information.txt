@@ -1,0 +1,42 @@
+abstract: due thursday -- 250 word right up 
+
+judging criteria:
+addresses questions or problems 
+well structured 
+realistic solutions
+ADDITIONAL INFORMATION
+visualizations
+
+explain the dataset well
+find a relationship and compare with an outside dataset
+
+problem statement:
+Resources for analytical sampling continue to decline and staffing is becoming increasingly limited, 
+FDC is establishing new ways to incorporate data. 
+It is not feasible to analyze a complete set of nutrients for a single food when the cost of analysis can exceed 
+$50,000.
+Gathering insight into how comparable foods have changed over time will provide a better idea as to which 
+components should continue to be analyzed and which ones remain constant and not necessarily analyzed each 
+time a food is updated.
+
+possible questions:
+Can we use this data to improve our understanding of analytical sampling?
+Have the food components changed over time for equivalent foods (ex. 
+whole wheat flour analyzed in 2010 compared to whole wheat flour analyzed in 2020)?
+When comparing nutrients from the two datasets, does the mean value for 
+SR Legacy fall between the minimum and maximum values of the Foundation Foods? 
+Which nutrients fall out of range the most and which fall in range more frequently?  
+Which food groups have had the biggest change?
+
+
+plan:
+question: Looking at the min, max, and mean (FF and SR) of each nutrient in each food,
+decide which foods still need to be analyzed based on how large the difference is between the FF and SR.
+
+1. finding Z score (measurement of how different the distribution is)
+2. pick a value of the score based on the information found to figure out a baseline (if above score than food needs to continue to be analyzed)
+3. once we have the food that needs to continue to be analyzed,
+
+make a loop that decides if the SR mean falls in between the FF min and max, if it does not 
+then add food name, nutrient, food group to a new csv file (these are the foods that need more analyzing)
+make graphs and visualizations from there -- which nutrients fall out of range most frequently (maybe find outside dataset that correlates nutrients with other findings)
