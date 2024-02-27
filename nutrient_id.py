@@ -1,13 +1,14 @@
 #FF_NDB,SR_NDB,food_category_id,FF Food description,SR Food description,Nutrient_id,rank,FF_Component,SR_Component,unit_name,SR Mean per 100g,SR Min,SR Max, Std_Error,SR Num_Data_pts,FF Mean per 100g,FF Min,FF Max,FF Median,FF data_points,FF Publication Date
-import numpy
+import numpy as np
 import pandas as pd
 
 ffsr = pd.read_csv('FF_SR_ data.csv')
-ff_comp = ffsr.groupby('FF_Component') #this is working lol 
+dancsv = pd.read_csv('food_stdev_diff.csv')
 
-std = ff_comp['FF Mean per 100g']
-print(std.get_group('Water'))
-#ff_comp['std'] = std
-#std_ff = ff_comp['std'].std()
-#print(std_ff)
-# ff_std = ffsr[ffsr[]]
+comp_std = ffsr.groupby('FF_Component')['FF Mean per 100g'].std() 
+ffsr['avg_stdev_diff']=comp_std
+ffsr['FF_std'] = ffsr['FF Mean per 100g']/ffsr['FF_Component'].map(comp_std)
+ffsr['SR_std'] = ffsr['SR Mean per 100g']/ffsr['FF_Component'].map(comp_std)
+ffsr['component_diff'] = abs(ffsr['FF_std']-ffsr['SR_std'])
+ffsr = ffsr.merge(dancsv, how='outer', validate='many_to_one')
+ffsr.to_csv('std_nutrient_id.csv', index=False)
