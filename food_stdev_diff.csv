@@ -1,0 +1,159 @@
+name,avg_stdev_diff
+"Apple juice, canned or bottled, unsweetened, with added ascorbic acid",0.04744153880345755
+"Apples, raw, fuji, with skin",0.13212606078011976
+"Apples, raw, gala, with skin",0.13390263560309248
+"Apples, raw, golden delicious, with skin",0.19392887155098437
+"Apples, raw, granny smith, with skin",0.09423935817733806
+"Apples, raw, red delicious, with skin",0.14341344655082197
+"Applesauce, canned, unsweetened, with added ascorbic acid",0.06823443338552947
+"Bananas, raw",0.14728804657020278
+"Barley flour or meal",0.28983923526809413
+"Beans, black, mature seeds, canned, low sodium",0.10301464702671362
+"Beans, great northern, mature seeds, canned",0.11663355609829953
+"Beans, kidney, red, mature seeds, canned, drained solids, rinsed in tap water",0.04243087929287377
+"Beans, navy, mature seeds, canned",0.10700617906126404
+"Beans, pinto, mature seeds, canned, drained solids, rinsed in tap water",0.03167669077604578
+"Beans, snap, green, canned, food category ids and see how the averages are changingregular pack, drained solids",0.004424766558487496
+"Beans, snap, green, canned, regular pack, drained solids",0.011481910619787277
+"Beans, snap, green, raw",0.0692472463324068
+"Beef sausage, pre-cooked",0.25795361310514026
+"Beef, chuck, under blade pot roast or steak, boneless, separable lean and fat, trimmed to 0 fat, choice, raw",0.12624575748748654
+"Beef, flank, steak, separable lean and fat, trimmed to 0 fat, choice, raw",0.09903908868416132
+"Beef, ground, 80% lean meat / 20% fat, raw",0.11149122780852606
+"Beef, ground, 90% lean meat / 10% fat, raw",0.0794949602202026
+"Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0 fat, choice, raw",0.3619123820170227
+"Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0 fat, choice, raw",0.06717493436452765
+"Beverages, almond milk, unsweetened, shelf stable",0.049262317537614224
+"Blueberries, raw",0.03255135264938101
+"Bread, white, commercially prepared (includes soft bread crumbs)",0.07081634498006095
+"Broccoli, raw",0.05368736450635654
+"Buckwheat",0.4374842658468382
+"Buckwheat flour, whole-groat",0.46419305737046035
+"Butter, salted",0.12225168570888317
+"Butter, without salt",0.0194205963509274
+"Cabbage, raw",0.057260022680193624
+"Cabbage, red, raw",0.06615734658167272
+"Carrots, baby, raw",0.08490592164492816
+"Carrots, raw",0.06041805852715315
+"Celery, raw",0.031900783487588416
+"Cheese product, pasteurized process, American, vitamin D fortified",0.18732268190202545
+"Cheese, cheddar",0.029192237458047707
+"Cheese, cottage, creamed, large or small curd",0.057352522548885614
+"Cheese, cottage, lowfat, 2% milkfat",0.01839735958726537
+"Cheese, cream",0.06715231688949884
+"Cheese, feta",0.4147944909902133
+"Cheese, fresh, queso fresco",0.17634452450591037
+"Cheese, mexican, queso cotija",0.22634725391459143
+"Cheese, monterey",0.17621789821955938
+"Cheese, mozzarella, low moisture, part-skim",0.0483979408277297
+"Cheese, parmesan, grated",0.02523855909889334
+"Cheese, pasteurized process, American, fortified with vitamin D",0.1683104174973149
+"Cheese, provolone",0.14953122583157036
+"Cheese, ricotta, whole milk",0.3309426849138123
+"Cherries, sweet, raw",0.09196884053624102
+"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",0.015603252886912953
+"Chicken, broilers or fryers, dark meat, thigh, meat only, raw",0.053412831882848975
+"Chicken, ground, raw",0.0855391787456389
+"Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained, rinsed in tap water",0.04328533013207353
+"Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",1.0784902243143466
+"Cowpeas, common (blackeyes, crowder, southern), mature seeds, canned, plain",0.10997338856219706
+"Cowpeas, common (blackeyes, crowder, southern), mature seeds, raw",0.1897974570896201
+"Cranberry juice, unsweetened",0.1811361126916362
+"Cream, fluid, heavy whipping",0.07897931851360304
+"Cream, sour, cultured",0.06826756258875216
+"Cucumber, with peel, raw",0.030986736496867496
+"Egg, white, dried",0.09121599886630687
+"Egg, white, raw, fresh",0.0936965408158507
+"Egg, white, raw, frozen, pasteurized",0.020866078324521538
+"Egg, whole, dried",0.24086139034138687
+"Egg, whole, raw, fresh",0.09153250852522776
+"Egg, whole, raw, frozen, pasteurized",0.041227265844501676
+"Egg, yolk, dried",0.30373999064606805
+"Egg, yolk, raw, fresh",0.35388213868907287
+"Egg, yolk, raw, frozen, pasteurized",0.0457938132436002
+"Garlic, raw",0.13733925140552
+"Grape juice, canned or bottled, unsweetened, with added ascorbic acid",0.050870178886401954
+"Grapefruit juice, white, canned or bottled, unsweetened",0.0891729750577896
+"Ground turkey, 93% lean, 7% fat, raw",0.05413096832653096
+"Ham, sliced, pre-packaged, deli meat (96%fat free, water added)",0.01753448055191131
+"Hummus, commercial",0.2499853746336295
+"Kale, raw",0.7232272295141112
+"Kiwifruit, green, raw",0.026975515575073317
+"Lentils, raw",0.2642510123491785
+"Lettuce, green leaf, raw",0.06714777109155161
+"Lettuce, iceberg (includes crisphead types), raw",0.027032146159630555
+"Lettuce, red leaf, raw",0.12492050555297424
+"Milk, buttermilk, fluid, cultured, lowfat",0.03924309574705434
+"Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",0.026234213012454384
+"Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",0.025195860582592388
+"Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",0.029691228083640598
+"Milk, whole, 3.25% milkfat, with added vitamin D",0.03312227484196338
+"Millet, raw",0.35207550395580733
+"Mushrooms, brown, italian, or crimini, raw",0.12326018145367652
+"Mushrooms, enoki, raw",0.09004982310268479
+"Mushrooms, maitake, raw",3.2871373868434026
+"Mushrooms, oyster, raw",0.20377982913192608
+"Mushrooms, portabella, grilled",0.19332979564089944
+"Mushrooms, shiitake, raw",0.17667286204475327
+"Mushrooms, white, raw",0.10670432465949366
+"Mustard, prepared, yellow",0.05906609051172871
+"Nectarines, raw",0.014856059922619392
+"Nuts, almond butter, plain, without salt added",0.2017550066101843
+"Nuts, almonds",0.11576848167452873
+"Nuts, almonds, dry roasted, with salt added",0.18627952242430057
+"Nuts, cashew nuts, raw",0.17345941111383256
+"Nuts, hazelnuts or filberts",0.21111595148632437
+"Nuts, macadamia nuts, raw",0.5942578002003084
+"Nuts, pecans",0.1851858191853602
+"Nuts, pine nuts, dried",0.2732554939449914
+"Nuts, pistachio nuts, raw",0.20014873599628402
+"Nuts, walnuts, english",0.203196569673898
+"Oats",0.38601560157821724
+"Oil, canola",0.5900495412696214
+"Oil, corn, industrial and retail, all purpose salad or cooking",0.2659118099364516
+"Oil, peanut, salad or cooking",0.23514583865666594
+"Oil, safflower, salad or cooking, high oleic (primary safflower oil of commerce)",0.14673165658355153
+"Oil, soybean, salad or cooking",0.4588290883751876
+"Onion rings, breaded, par fried, frozen, prepared, heated in oven",0.069654416056347
+"Orange juice, chilled, includes from concentrate",0.058028550613637146
+"Orange juice, raw",0.05198018518385421
+"Peanut butter, smooth style, with salt",0.29479514684695624
+"Peanuts, all types, raw",0.36539131768762256
+"Peas, green, canned, drained solids, rinsed in tap water",0.02975727521643475
+"Peppers, sweet, green, raw",0.08116988453937275
+"Peppers, sweet, red, raw",0.0553481491038689
+"Peppers, sweet, yellow, raw",0.14835842220547393
+"Pickles, cucumber, dill or kosher dill",0.008159642325992578
+"Pineapple, raw, all varieties",0.1860478881640305
+"Pork, fresh, ground, raw",0.054942723928565154
+"Pork, fresh, loin, tenderloin, separable lean and fat, raw",0.03282609815749716
+"Pork, fresh, loin, top loin (roasts), boneless, separable lean and fat, raw",0.04992772906164563
+"Potato flour",0.47803788861606894
+"Raspberries, raw",0.08634991766653889
+"Rice flour, brown",0.36363173612003086
+"Rice flour, white, unenriched",0.2549591120881403
+"Rice, brown, long-grain, raw",0.19700684656926643
+"Rice, white, long-grain, regular, raw, unenriched",0.12867068657449807
+"Salt, table",0.05571361213135006
+"Sausage, Italian, pork, cooked",0.14816819812079107
+"Sausage, turkey, breakfast links, mild",0.2012971332994802
+"Seeds, flaxseed",0.4340054975426082
+"Seeds, sunflower seed kernels, dried",0.30366826472442027
+"Seeds, sunflower seed kernels, dry roasted, with salt added",1.248542173437029
+"Soy flour, defatted",0.5033220678031407
+"Soy flour, full-fat, raw",0.600535637303787
+"Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D",0.19637440410111429
+"Spelt, uncooked",0.12904181331469344
+"Spinach, raw",0.29313351329021226
+"Strawberries, raw",0.03223853255562347
+"Tomato juice, canned, with salt added",0.051974165990787934
+"Wheat flour, white, all-purpose, enriched, bleached",0.1701593947660479
+"Wheat flour, white, all-purpose, enriched, unbleached",0.22651635690055186
+"Wheat flour, white, all-purpose, unenriched",0.15492769106978735
+"Wheat flour, white, bread, enriched",0.19466101545879147
+"Wheat flour, whole-grain",0.2169543136042063
+"Yogurt, Greek, plain, nonfat",0.004501451170623865
+"Yogurt, Greek, plain, whole milk",0.04304837125825762
+"Yogurt, Greek, strawberry, nonfat",0.013715393062460546
+"Yogurt, plain, skim milk, 13 grams protein per 8 ounce",0.06481443610129006
+"Yogurt, plain, whole milk, 8 grams protein per 8 ounce",0.07176734690367133
