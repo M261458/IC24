@@ -1,18 +1,6 @@
 import pandas as pd
 
 
-
-# nutrient_ids = df[['Nutrient_id','FF Mean per 100g']]
-# means = df[['Nutrient_id','SR Mean per 100g','FF Mean per 100g']]
-# print(means)
-# # nutrient_ids = nutrient_ids.to_list()
-
-# stdevs = nutrient_ids.groupby(['Nutrient_id']).std()
-# print(df[df['Nutrient_id'] == '1288'])
-
-
-# Copy from above here.
-
 df = pd.read_csv('mydata.csv')
 df = df[['SR_NDB','SR Food description','Nutrient_id','SR Mean per 100g','FF Mean per 100g']] # Fileter data frame to what we need.
 stdevs0 = df.groupby('Nutrient_id',as_index=False)[['FF Mean per 100g']].std() # New data frame with Stdevs of FF mean
