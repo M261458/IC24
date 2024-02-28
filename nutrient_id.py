@@ -10,5 +10,6 @@ ffsr['avg_stdev_diff']=comp_std
 ffsr['FF_std'] = ffsr['FF Mean per 100g']/ffsr['FF_Component'].map(comp_std)
 ffsr['SR_std'] = ffsr['SR Mean per 100g']/ffsr['FF_Component'].map(comp_std)
 ffsr['component_diff'] = abs(ffsr['FF_std']-ffsr['SR_std'])
-ffsr = ffsr.merge(dancsv, how='outer', validate='many_to_one')
-ffsr.to_csv('std_nutrient_id.csv', index=False)
+ffsr = ffsr.merge(dancsv, how='left', validate='many_to_one').fillna(0)
+nutrient = ffsr
+ffsr.to_csv('std_nutrient_id.csv')
