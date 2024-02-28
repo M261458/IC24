@@ -1,0 +1,21 @@
+SR Food description,Nutrient_id,SR_Component,stdev_difference
+"Cheese, pasteurized process, American, fortified with vitamin D",1131,"Tocotrienol, delta",4.472135954999578
+"Cheese, ricotta, whole milk",1170,"Pantothenic acid",3.0031808551800894
+"Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",1101,"Manganese, Mn",11.251104048679002
+"Egg, yolk, raw, fresh",1122,"Lycopene",4.123105625617661
+"Egg, yolk, raw, fresh",1128,"Tocotrienol, alpha",3.359082550760265
+"Kale, raw",1098,"Copper, Cu",3.5791732495779818
+"Kale, raw",1185,"Vitamin K (phylloquinone)",4.40217643310525
+"Mushrooms, maitake, raw",1114,"Vitamin D (D2 + D3)",7.897221955284261
+"Mushrooms, maitake, raw",1110,"Vitamin D",7.888833919641139
+"Mushrooms, maitake, raw",1111,"Vitamin D2 (ergocalciferol)",68.24786800635803
+"Nuts, macadamia nuts, raw",1101,"Manganese, Mn",4.550587583919874
+"Oil, canola",1129,"Tocotrienol, beta",4.437286369636127
+"Potato flour",1089,"Iron, Fe",4.878581189290253
+"Rice flour, brown",1175,"Vitamin B-6",4.281484719186334
+"Seeds, flaxseed",1103,"Selenium, Se",5.339428098714728
+"Seeds, flaxseed",1165,"Thiamin",5.0619692496316775
+"Seeds, sunflower seed kernels, dry roasted, with salt added",1170,"Pantothenic acid",40.4907123126672
+"Soy flour, defatted",1098,"Copper, Cu",6.324196163673406
+"Soy flour, full-fat, raw",1166,"Riboflavin",3.6802078757394643
+"Soy flour, full-fat, raw",1098,"Copper, Cu",4.529659091789561
