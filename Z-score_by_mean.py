@@ -17,15 +17,16 @@ stdev_list = []
 for ind in stdevs_df.index: # calculates stdev difference for every row of df.
     stdev_list.append(abs((stdevs_df['FF Mean per 100g'][ind]-stdevs_df['SR Mean per 100g'][ind])/stdevs_df['stdev'][ind]))
 stdevs_df['stdev_difference'] = stdev_list # Adds stdev differences to df.
-print(stdevs_df) # 'stdevs_df' has Food description, both means, stdevs, and stdev differences.
+# print(stdevs_df) # 'stdevs_df' has Food description, both means, stdevs, and stdev differences.
 stdevs_df = stdevs_df.drop(['index'],axis=1)
 
 
 nut_tup_list = []
 for ind in stdevs_df.index:
-    if stdevs_df['stdev_difference'][ind] >= 3:
+    if (stdevs_df['stdev_difference'][ind] >= 3) and (stdevs_df['FF Mean per 100g'][ind] != 0) and (stdevs_df['SR Mean per 100g'][ind] != 0):
         nut_tup_list.append((stdevs_df['SR Food description'][ind],stdevs_df['Nutrient_id'][ind],stdevs_df['SR_Component'][ind],stdevs_df['stdev_difference'][ind]))
 
+# print(nut_tup_list)
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # DO NOT RUN THESE LINES AGAIN!!!!!!! THE FILE ALREADY EXISTS!!!!!!!!!!!!!!!!!!!!!!
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -35,7 +36,7 @@ for ind in stdevs_df.index:
 #     for tupl in nut_tup_list:
 #         file.write(f'"{tupl[0]}",{tupl[1]},"{tupl[2]}",{tupl[3]}\n')
 
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
