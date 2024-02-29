@@ -24,11 +24,14 @@ stdevs_df = stdevs_df.drop(['index'],axis=1)
 
 nutrient_df = stdevs_df.groupby('SR_Component',as_index=False)[['stdev_difference']].mean() # New data frame with Stdevs of FF mean
 nutrient_df = nutrient_df.rename(columns={"stdev_difference": "mean_stdev_difference"})
-sorted =nutrient_df.sort_values('mean_stdev_difference').head(10)
-# print(sorted)
-# sorted.to_csv('min_nutrient_id.csv')
+sorted =nutrient_df.sort_values('mean_stdev_difference')
 
-min_nut = pd.read_csv('min_nutrient_id.csv')
-print(min_nut)
-fig = px.bar(min_nut, x="SR_Component", y="mean_stdev_difference", color="SR_Component", barmode="group")
+sorted.to_csv('max_nutrient_id.csv')
+
+
+##################################################################################################
+max_nut = pd.read_csv('max_nutrient_id.csv')
+print(max_nut)
+fig = px.bar(max_nut, x="SR_Component", y="mean_stdev_difference", color="SR_Component", barmode="group")
 fig.show()
+#################################################################################################
