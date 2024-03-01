@@ -2,7 +2,7 @@ import pandas as pd
 
 
 df = pd.read_csv('mydata.csv')
-df = df[['SR_NDB','SR Food description','Nutrient_id','SR Mean per 100g','FF Mean per 100g']] # Fileter data frame to what we need.
+df = df[['SR_NDB','SR Food description','Nutrient_id','SR_Component','SR Mean per 100g','FF Mean per 100g']] # Fileter data frame to what we need.
 stdevs0 = df.groupby('Nutrient_id',as_index=False)[['FF Mean per 100g']].std() # New data frame with Stdevs of FF mean
 stdevs0 = stdevs0.rename(columns={"FF Mean per 100g": "stdev"}) # Rename FF mean column of new df to stdev.
 
@@ -17,7 +17,27 @@ stdev_list = []
 for ind in stdevs_df.index: # calculates stdev difference for every row of df.
     stdev_list.append(abs((stdevs_df['FF Mean per 100g'][ind]-stdevs_df['SR Mean per 100g'][ind])/stdevs_df['stdev'][ind]))
 stdevs_df['stdev_difference'] = stdev_list # Adds stdev differences to df.
-print(stdevs_df) # 'stdevs_df' has Food description, both means, stdevs, and stdev differences.
+# print(stdevs_df) # 'stdevs_df' has Food description, both means, stdevs, and stdev differences.
+stdevs_df = stdevs_df.drop(['index'],axis=1)
+
+
+nut_tup_list = []
+for ind in stdevs_df.index:
+    if (stdevs_df['stdev_difference'][ind] >= 3) and (stdevs_df['FF Mean per 100g'][ind] != 0) and (stdevs_df['SR Mean per 100g'][ind] != 0):
+        nut_tup_list.append((stdevs_df['SR Food description'][ind],stdevs_df['Nutrient_id'][ind],stdevs_df['SR_Component'][ind],stdevs_df['stdev_difference'][ind]))
+
+# print(nut_tup_list)
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# DO NOT RUN THESE LINES AGAIN!!!!!!! THE FILE ALREADY EXISTS!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+# with open('nutrient_stdev_diff.csv', 'w') as file:
+#     file.write('SR Food description,Nutrient_id,SR_Component,stdev_difference\n')
+#     for tupl in nut_tup_list:
+#         file.write(f'"{tupl[0]}",{tupl[1]},"{tupl[2]}",{tupl[3]}\n')
+
+# #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 # for ind in stdevs_df.index:
@@ -26,7 +46,7 @@ print(stdevs_df) # 'stdevs_df' has Food description, both means, stdevs, and std
 
 
 # Find average STDEV error over each food group.
-mean0 = stdevs_df.groupby('SR Food description',as_index=False)[['stdev_difference']].mean()
+# mean0 = stdevs_df.groupby('SR Food description',as_index=False)[['stdev_difference']].mean()
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # DO NOT RUN THESE LINES AGAIN!!!!!!! THE FILE ALREADY EXISTS!!!!!!!!!!!!!!!!!!!!!!

@@ -40,3 +40,10 @@ decide which foods still need to be analyzed based on how large the difference i
 make a loop that decides if the SR mean falls in between the FF min and max, if it does not 
 then add food name, nutrient, food group to a new csv file (these are the foods that need more analyzing)
 make graphs and visualizations from there -- which nutrients fall out of range most frequently (maybe find outside dataset that correlates nutrients with other findings)
+
+1. Food diff graphs
+2. info on food diff outlier
+3. nutrient diff graphs
+4. info on nutrient diff outlier
+5. food category
+6. info on food category outlier
